@@ -4,4 +4,4 @@ Today I Learned
 
 | #   | 날짜     | 카테고리               | 배운 내용                                   | 비고 |
 | :-- | :------- | :--------------------  | :---------------------------------------  | :--- |
-| 1 | [20190814](JavaScript30/01/style.css)| JavaScript30 | KeyBoard Event Control |  |
+| 1 | [20190814](JavaScript30/01/index-START.html)| JavaScript30 | KeyBoard Event Control |  |
