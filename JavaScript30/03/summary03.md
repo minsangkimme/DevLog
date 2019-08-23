@@ -185,8 +185,8 @@ function handleUpdate() {
 </script>
 ```
 
-![결과](/javascript30/03/blur01.JPG)
-![결과](/javascript30/03/blur02.JPG)
+![결과](/JavaScript30/03/blur01.JPG)
+![결과](/JavaScript30/03/blur02.JPG)
 
 ## 찾아본 내용
 
