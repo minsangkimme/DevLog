@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+form {
+  margin: 10px;
+}
+
+.js-CheckInForm {
+  margin-left: 26px;
+}
+
+.btn {
+  margin: 12px;
+}
+
+.btn-outline-primary {
+  padding-right: 15px;
+}
+
+.btn-outline-info {
+  margin-left: 240px;
+}
+.form-control {
+  display: inline;
+  width: 200px;
+}
+div {
+  margin: 10%;
+}

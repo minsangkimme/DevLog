@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>🌇Hotel App</title>
+  </head>
+  <body>
+    <div>     
+        <form class="js-CheckInForm">
+            체크인:
+            <input type="text" class="form-control js-CheckIn" placeholder="Check In Name" autofocus />
+            <button type="button" class="btn btn-primary js-CheckInForm">Join</button><br />
+        </form>
+
+        <form class="js-CheckOutForm">
+            체크아웃:
+            <input type="text" class="form-control js-CheckOut" placeholder="Check Out Name" />
+            <button type="button" class="btn btn-outline-primary js-CheckOutForm">Out</button><br />
+        </form>
+
+    <button type="button" class="btn btn-outline-info" onclick="getStatus()">고객 리스트</button>
+</div> 
+
+    <script src="hotel-app.js"></script>
+  </body>
+</html>
