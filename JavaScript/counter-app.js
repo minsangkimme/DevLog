@@ -1,59 +1,49 @@
-const Counter = {
+const counter = {
   // 카운트
   cnt: 0,
-
-  // 카운트 상태확인
-  getCount: function() {
-    return this.cnt;
-  },
-
-  // 카운트 증가
-  increment: function(number) {
-    const empty = number === '' ? false : null;
-
-    if (typeof number === 'number') {
-      for (let i = 1; i <= number; i++) {
-        this.cnt++;
-      }
-
-      return this.getCount();
-    }
-
-    if (number === undefined || empty) {
-      return ++this.cnt;
-    }
-
-    return `${number} 는 잘못된 값입니다.`;
-  },
-
-  // 카운트 감소
-  decrement: function(number) {
-    const empty = number === '' ? false : null;
-
-    if (typeof number === 'number') {
-      for (let i = 1; i <= number; i++) {
-        this.cnt--;
-      }
-
-      return this.getCount();
-    }
-    if (number === undefined || empty) {
-      return --this.cnt;
-    }
-
-    return `${number} 는 잘못된 값입니다.`;
-  },
 };
+// 카운트 상태확인
+function getCount() {
+  return counter.cnt;
+}
 
-console.log('----테스트 코드---');
-console.log('상태:', Counter.getCount());
-console.log('증가:', Counter.increment());
-console.log('증가:', Counter.increment());
-console.log('증가:', Counter.increment(10));
-console.log('상태:', Counter.getCount());
-console.log('감소:', Counter.decrement());
-console.log('감소:', Counter.decrement());
-console.log('감소:', Counter.decrement(3));
-console.log('상태:', Counter.getCount());
-console.log('증가:', Counter.increment('test'));
-console.log('감소:', Counter.decrement('test'));
+// 카운트 증가
+function Increment(number) {
+  // 매개변수 값 만큼 증가
+  if (typeof number === 'number') {
+    for (let i = 1; i <= number; i++) {
+      counter.cnt++;
+    }
+
+    this.status = getCount();
+  }
+
+  // 기본 증가
+  if (!number) {
+    this.status = ++counter.cnt;
+  }
+}
+
+// 카운트 감소
+function Decrement(number) {
+  // 매개변수 값 만큼 감소
+  if (typeof number === 'number') {
+    for (let i = 1; i <= number; i++) {
+      counter.cnt--;
+    }
+
+    this.status = getCount();
+  }
+
+  // 기본 감소
+  if (!number) {
+    this.status = --counter.cnt;
+  }
+}
+
+var count = new Increment(); // Increment {status: 1}
+var count = new Increment(4); // Increment {status: 5}
+var count = new Decrement(); // Decrement {status: 4}
+var count = new Decrement(4); // Decrement {status: 0}
+
+getCount(); //상태확인
