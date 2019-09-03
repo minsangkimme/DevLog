@@ -5,41 +5,46 @@ const chkOut = chkOutForm.querySelector('.js-CheckOut');
 const button = document.querySelectorAll('button');
 
 // 고객 리스트
-let _name = [];
+let guest = [];
 
 // 체크인
 function checkIn(name) {
-  if (_name.indexOf(name) > -1)
-    return alert(`${name}님은 이미 체크인 상태입니다.`);
+  const alreadyCheckIn = guest.indexOf(name) > -1;
 
-  const valueCheck =
-    typeof name === 'string' && name.length > 0 ? _name.push(name) : false;
+  if (alreadyCheckIn) {
+    return alert(`${name}님은 이미 체크인 상태입니다.`)
+  }
 
-  if (!valueCheck) return alert('ERROR: Type Or Length Error');
+  const checkValue = name && typeof name === 'string' ? guest.push(name) : false;
 
-  return alert(`안녕하세요. ${_name[valueCheck - 1]}님 반갑습니다`);
+  if (!checkValue) throw Error('Type or Length Error');
+
+  return alert(`안녕하세요. ${guest[checkValue - 1]}님 반갑습니다`);
 }
 
 // 체크아웃
 function checkOut(name) {
-  if (_name.indexOf(name) === -1) return alert('없는 고객입니다.');
+  const notFoundGuest = guest.indexOf(name) === -1;
 
-  let guest = []; // this._name 복제용도
-  const valueCheck =
-    typeof name === 'string' && name.length > 0 ? _name.indexOf(name) : false;
+    if (notFoundGuest) {
+      return alert('없는 고객입니다.');
+    }
 
-  guest = _name.slice();
-  _name.splice(valueCheck, 1);
+    let copyGuest = []; // guest 복제용도
+    const checkValue = name && typeof name === 'string' ? guest.indexOf(name) : false;
 
-  if (valueCheck > -1)
-    return alert(`${guest[valueCheck]}님 감사합니다. 안녕히 가세요`);
-  if (!valueCheck) return alert('ERROR: Type Or Length Error');
+    copyGuest = guest.slice();
+    guest.splice(checkValue, 1);
+
+    if (checkValue > -1) {
+      return alert(`${copyGuest[checkValue]}님 감사합니다. 안녕히 가세요`);
+    }
+    if (!checkValue) throw Error('Type or Length Error');
 }
 
 // 고객 상태체크
 function getStatus() {
-  const status =
-    _name.length > 0 ? `${_name}님이 체크인했습니다.` : '고객이 없습니다';
+  const status = guest.length > 0 ? `${guest}님이 체크인했습니다.` : '고객이 없습니다';
   return alert(status);
 }
 
@@ -60,7 +65,7 @@ function handleSubmit(event) {
 }
 
 function init() {
-  button.forEach(btn => btn.addEventListener('click', handleSubmit));
+  button.forEach((btn) => btn.addEventListener('click', handleSubmit));
   chkInForm.addEventListener('submit', handleSubmit);
   chkOutForm.addEventListener('submit', handleSubmit);
 }
