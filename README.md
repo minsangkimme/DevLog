@@ -4,6 +4,7 @@ Today I Learned
 
 | #   | 날짜                                              | 카테고리     | 배운 내용                                             | 비고 |
 | :-- | :------------------------------------------------ | :----------- | :---------------------------------------------------- | :--- |
+| 11  | [20191009](simplePage/project-readme.md)          | simplePage   | css 레이아웃 및 연습                                  |      |
 | 10  | [20190912](React/react02.md)                      | React        | React필요성, props, state, constructor                |      |
 | 9   | [20190910](React/react01.md)                      | React        | React 기초개념                                        |      |
 | 8   | [20190827](JavaScript30/04/summary04.md)          | JavaScript30 | map, filter, sort, reduce 메서드 활용하기             |      |
