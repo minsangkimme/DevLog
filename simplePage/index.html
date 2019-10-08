@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>심플포트폴리오</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.1.12.4.js"></script>
+    <script src="plugins/bxslider/js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="plugins/web-fonts-with-css/css/all.css">
+    <script>
+        $(document).ready(function() {
+            $(".slider").bxSlider({
+                controls: false,
+                pager: false,
+                auto: true,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="slider">
+        <div class="bacground__01"></div>
+        <div class="bacground__02"></div>
+        <div class="bacground__03"></div>
+    </div>
+
+    <div class="contents">
+        <p class="contents__name">Kim, Min Sang</p>
+        <p class="contents__job">프론트엔드 개발자 준비</p>
+
+        <div class="contents__sns">
+            <ul class="contents__list">
+                <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-blogger-b"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body></html>
