@@ -4,6 +4,7 @@ Today I Learned
 
 | #   | 날짜                                                                    | 카테고리     | 배운 내용                                             | 비고 |
 | :-- | :---------------------------------------------------------------------- | :----------- | :---------------------------------------------------- | :--- |
+| 13  | [20191010](https://minsangkimme.github.io/TIL/todos/index.html)         | todos        | localStorage 를 활용한 클라이언트 데이터 유지         |      |
 | 12  | [20191009](https://minsangkimme.github.io/TIL/resume/public/index.html) | resume       | 미디어쿼리, @keyframe, animation, image sprite        |      |
 | 11  | [20191006](https://minsangkimme.github.io/TIL/simplePage/index.html)    | simplePage   | css 레이아웃 및 연습                                  |      |
 | 10  | [20190912](React/react02.md)                                            | React        | React필요성, props, state, constructor                |      |
