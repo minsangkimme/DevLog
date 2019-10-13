@@ -4,6 +4,7 @@ Today I Learned
 
 | #   | 날짜                                                                    | 카테고리     | 배운 내용                                               | 비고 |
 | :-- | :---------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
+| 15  | [20191012](https://minsangkimme.github.io/TIL/todos/index.html)         | todos        | 코드리뷰 후 JS 절차지향적 코드 등 개선                  |      |
 | 14  | [20191011](express-app/)                                                | express-app  | node로 server와 api-server 간 요청 응답으로 페이지 구현 |      |
 | 13  | [20191010](https://minsangkimme.github.io/TIL/todos/index.html)         | todos        | localStorage 를 활용한 클라이언트 데이터 유지           |      |
 | 12  | [20191009](https://minsangkimme.github.io/TIL/resume/public/index.html) | resume       | 미디어쿼리, @keyframe, animation, image sprite          |      |
