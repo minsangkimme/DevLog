@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-image: url('./back.png');
+    background-position: center;
+    background-size: 60vw 80vh;
+    background-repeat: no-repeat;
+}
+
+.count-wrapper {
+    position: relative;
+    top:30%;
+    text-align: center;
+}
+
+.count-state {
+    width: 50vw;    
+    text-align: center;
+    position: relative;
+    top: 30%;    
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 3em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.input-number {
+    width: 20vw;
+    height: 5vh;
+    border: 3px solid #34495e;
+    border-radius: 10px;
+}
+.btn {
+    background-color: #fff;
+    border: 3px solid #34495e;
+    border-radius: 50%;
+}
