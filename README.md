@@ -2,6 +2,7 @@
 
 | #   | 날짜                                                                              | 카테고리     | 기록                                                    | 비고 |
 | :-- | :-------------------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
+| 18  | [20191030](http://minsangkimme.github.io/DevLog/searchGithub/index.html)          | searchGithub | searchGithub User                                       |      |
 | 17  | [20191015](https://minsangkimme.github.io/DevLog/JavaScript/FishBread/index.html) | JavaScript   | 붕어빵 앱 페이지 업로드                                 |      |
 | 16  | [20191013](https://minsangkimme.github.io/DevLog/JavaScript/Counter/index.html)   | JavaScript   | counter 앱 브라우저 버전 업로드                         |      |
 | 15  | [20191012](todos/index_code_review.js)                                            | todos        | 코드리뷰 후 JS 절차지향적 코드 등 개선                  |      |
