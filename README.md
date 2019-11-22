@@ -2,6 +2,7 @@
 
 | #   | 날짜                                                                              | 카테고리     | 기록                                                    | 비고 |
 | :-- | :-------------------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
+| 19 | [20191122](JavaScript/) | JavaScript | JavaScript 특징 및 Browser 동작원리
 | 18  | [20191030](http://minsangkimme.github.io/DevLog/searchGithub/index.html)          | searchGithub | searchGithub User                                       |      |
 | 17  | [20191015](https://minsangkimme.github.io/DevLog/JavaScript/FishBread/index.html) | JavaScript   | 붕어빵 앱 페이지 업로드                                 |      |
 | 16  | [20191013](https://minsangkimme.github.io/DevLog/JavaScript/Counter/index.html)   | JavaScript   | counter 앱 브라우저 버전 업로드                         |      |
