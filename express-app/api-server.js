@@ -21,6 +21,10 @@ app.get('/users', (req, res) => {
     res.send(userDB);
 });
 
+app.get('/wqeqwas', (req, res) => {
+    res.send(userDB);
+});
+
 
 
 

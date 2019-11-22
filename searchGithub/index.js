@@ -1,58 +1,56 @@
 const userInfoEl = document.querySelector('.userInfo');
 const userReposEl = document.querySelector('.userRepos');
 const form = document.querySelector('form');
-const inputTextEl = document.querySelector('.form-control'); 
+const inputTextEl = document.querySelector('.form-control');
 
 const init = () => {
-    inputTextEl.addEventListener('keyup', getUserInfo);
-    form.addEventListener('submit', handleSubmit);
-}
+  inputTextEl.addEventListener('keyup', getUserInfo);
+  form.addEventListener('submit', handleSubmit);
+};
 const getUserInfo = (e) => {
-   const userName = e.target.value;
-   fetch(`https://api.github.com/users/${userName}`)
-   .then((response) => response.json())
-   .then((userInfo) => renderInfo(userInfo))
-   .then((res) => userInfoEl.innerHTML = res);
+  const userName = e.target.value;
+  fetch(`https://api.github.com/users/${userName}`)
+    .then((response) => response.json())
+    .then((userInfo) => renderInfo(userInfo))
+    .then((res) => (userInfoEl.innerHTML = res));
 
-   fetch(`https://api.github.com/users/${userName}/repos`)
-   .then((response) => response.json())
-   .then((userRepos) => renderRepos(userRepos))
-   .then((res)=>userReposEl.innerHTML = res);
-}
+  fetch(`https://api.github.com/users/${userName}/repos`)
+    .then((response) => response.json())
+    .then((userRepos) => renderRepos(userRepos))
+    .then((res) => (userReposEl.innerHTML = res));
+};
 
 const handleSubmit = (e) => {
-    e.preventDefault();    
-}
+  e.preventDefault();
+};
 
-const renderRepos = (userRepos) => {    
-    const repos = userRepos.map((item) => {            
-            const url  = item.html_url;
-            const description = item.description ? item.description : '' 
-            const forkCount = item.forks_count;
-            const watchers =  item.watchers_count;    
-            
-            return (`<div>
+const renderRepos = (userRepos) => {
+  const repos = userRepos.map((item) => {
+    const url = item.html_url;
+    const description = item.description ? item.description : '';
+    const forkCount = item.forks_count;
+    const watchers = item.watchers_count;
+
+    return `<div>
                             <a href=${url} target="_blank">${item.name}</a>
                             <div>${description}</div>
                             <span class="label label-default">${watchers}Watchers</span>
                             <span class="label label-primary">${forkCount}Forks</span>
                             <hr>                            
-                        </div>
-                        `)
-    });
+                        </div>`;
+  }).join('');
 
-    return (` <div class='panel-default userRepos'>
+  console.log(repos);
+  return ` <div class='panel-default userRepos'>
                     <div class='panel-heading'>
                         <h3 class="panel-title">Repos</h3>
                     </div>
-                    <div class="panel-body">
-                        ${repos}
-                    </div>              
-                </div>`)
-}
+                    <div class="panel-body">${repos}</div>              
+                </div>`;
+};
 
 const renderInfo = (userInfo) => {
-    return ( `<div class='panel-default userInfo'>
+  return `<div class='panel-default userInfo'>
                         <div class='panel-heading'>
                             <h3 class="panel-title">${userInfo.name}</h3>
                         </div>
@@ -86,9 +84,8 @@ const renderInfo = (userInfo) => {
                             </ul>
                         </div>
                     </div>                
-                `)
-}
+                `;
+};
 window.onload = () => {
-    init();
-}
-
+  init();
+};
