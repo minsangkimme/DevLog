@@ -4,6 +4,7 @@
 
 | #   | 날짜                                                                              | 카테고리     | 기록                                                    | 비고 |
 | :-- | :-------------------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
+| 21  | [20191215](https://minsangkimme.github.io/DevLog/resume/public/index.html)        | resume       | 자기소개 페이지 수정           |      |
 | 20  | [20191125](JavaScript30/)                                                         | JavaScript30 | css flex and JS 공부                                    |      |
 | 19  | [20191122](JavaScript/)                                                           | JavaScript   | JavaScript 특징 및 Browser 동작원리                     |      |
 | 18  | [20191030](http://minsangkimme.github.io/DevLog/searchGithub/index.html)          | searchGithub | searchGithub User                                       |      |
