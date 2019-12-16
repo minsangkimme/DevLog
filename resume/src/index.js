@@ -15,6 +15,11 @@ const changeBg = function(id) {
         portraitEl.style.backgroundImage = `url('../public/nodes.jpg')`;       
         portraitEl.style.transition = 'all 1s';
     }
+
+    if (id === 'project4') {
+        portraitEl.style.backgroundImage = `url('../public/cleaner.jpg')`;       
+        portraitEl.style.transition = 'all 1s';
+    }
 }
 
 const originalBg = function() {

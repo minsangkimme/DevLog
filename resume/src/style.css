@@ -118,25 +118,16 @@ body {
     position: relative; 
 }
 
-.icons {
-    margin: 20px 0;
+i {
+    font-size: 35px;
+    margin: 13px 2px 0 2px;
+    transition: all 0.3s;
 }
 
-.icons a {
-    background-image: url('../public/icons.png');
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    text-indent: -9999px;
-    border-radius: 20%;
+i:hover {
+    color: #fff;
+    
 }
-
-.icons a.github      { background-position: left top;}
-.icons a.facebook  { background-position: center top;}
-.icons a.pinterest { background-position: right top;}
-
-.icons a:hover { background-position-y:  bottom;}
-
 .timeline {
     font-size: 0.9rem;
     color: #666;
@@ -152,12 +143,12 @@ body {
 
 .timeline li h3 {
     color: orange;
-    float:left;
-    font-size: 1rem;
-    letter-spacing: 0.2em;
-    padding-top: 0.2em;    
+    float: left;
+    font-size: 1.3rem;
+    padding-top: 0.2em;
     margin-right: 0.5em;
     border-top: 2px solid;
+    font-weight: 900;
 }
 
 .graph li {
@@ -223,8 +214,6 @@ body {
     .timeline li:nth-child(even) {
         margin-left: auto;
         margin-top: -120px;
-        margin-bottom:  -120px;        
-
+        /* margin-bottom:  -120px;         */
     }
-
 }
