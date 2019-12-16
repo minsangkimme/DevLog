@@ -18,7 +18,7 @@
 }
 
 /* CSS Reset */
-body, h1, h2, h3, p, ul, dl , dd, div{
+body, h1, h2, h3, h4, p, ul, dl , dd, div{
     margin: 0;
     padding: 0;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .portrait {
-    background-image: url('../public/me.jpg');
+    background-image: url('../public/me.png');
     background-size: cover;
     background-position: center;
     padding-top: 56.25%;  /* 16: 9 */
@@ -75,7 +75,7 @@ body {
     line-height: 2;
     font-style: italic;
     margin-bottom: 40px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Hi Melody', cursive;
     position: sticky;
     top: -4em;
     background-color:  #111;
@@ -113,7 +113,7 @@ body {
 .name-title {
     font-size: 1.5em;
     line-height: 0.7;
-    color: deeppink;
+    color: orange;
     margin-left: -0.3em;
     position: relative; 
 }
@@ -143,7 +143,7 @@ body {
     
 }
 .timeline li {
-    padding-bottom: 30px;
+    padding-bottom: 30px;    
 }
 
 .timeline li:last-child {
@@ -189,6 +189,12 @@ body {
 .list dd {
     overflow: hidden;
 }
+.project {
+    color: #ecf0f1;
+}
+.project:hover {
+    color: orange;
+}
 
 @media ( min-width: 768px ) {
     .portrait {
@@ -210,7 +216,7 @@ body {
     }
     .timeline li {
         width: 50%;
-        padding: 0 10px;
+        padding: 3em 1em;
         box-sizing: border-box;
     }
 
