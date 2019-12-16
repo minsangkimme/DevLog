@@ -49,7 +49,8 @@ app.post('/register', (req, res) => {
         method: "POST",
         form: req.body
     }
-
+    console.log(req)
+    console.log(req.body);
     request(addUsers);
     res.redirect('/login');
 });
