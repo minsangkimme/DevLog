@@ -1,0 +1,110 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+body {
+    font-family: 'Spoqa Han Sans', 'Sans-serif';
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+h1 {
+    padding: 25px;
+    font-size: 28px;
+    color: #1082fc;    
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 25px;    
+}
+
+.form-group {    
+    padding: 35px;
+    background-color: rgba(245, 245, 249, 0.7);
+    border-radius: 25px;
+    width: 440px;
+    margin-bottom: 25px;
+}
+
+button {
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#prevBtn {
+    color: #1082fc; 
+    border: 2px solid #1082fc; 
+    background-color: #fff;       
+    outline: none;     
+}
+ 
+#nextBtn {
+    background-color: #1082fc; 
+    border: 2px solid #1082fc; 
+    color: #fff;
+   float: right;
+   outline: none;   
+}
+
+#nextBtn:hover {
+    background-color: #fff ;
+    border: 2px solid #1082fc; 
+    color: #1082fc;
+    transition:all 200ms;
+    cursor: pointer;
+}
+
+#prevBtn:hover {
+    background-color: #1082fc; 
+    border: 2px solid #1082fc; 
+    color: #fff;
+    transition:all 200ms;
+    cursor: pointer;
+}
+
+#prevBtn:active {
+    box-shadow: 3px  3px  #bdc3c7;    
+    transition:all 0.1;
+}
+
+#nextBtn:active {
+    box-shadow: 3px  3px  #bdc3c7;    
+    transition:all 0.1;
+}
+
+p {
+    padding: 4px;
+}
+
+img {
+    display: block;
+    width: 175px; 
+    margin: 0 auto;
+}
+
+.active {
+    font-weight: 900;
+}
+
+#submit {
+    background-color: #1082fc; 
+    border: 2px solid #1082fc; 
+    color: #fff;
+   float: right;
+   outline: none;   
+}
+
+#submit:hover {
+    background-color: #fff ;
+    border: 2px solid #1082fc; 
+    color: #1082fc;
+    transition:all 200ms;
+    cursor: pointer;
+}
+
+#submit:active {
+    box-shadow: 3px  3px  #bdc3c7;    
+    transition:all 0.1;
+}
