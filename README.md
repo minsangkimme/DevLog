@@ -4,7 +4,7 @@
 
 | #   | 날짜                                                                              | 카테고리     | 기록                                                    | 비고 |
 | :-- | :-------------------------------------------------------------------------------- | :----------- | :------------------------------------------------------ | :--- |
-| 23 | [20191218](https://minsangkimme.github.io/DevLog/css/index.html) | css | css float layout 공부 | |
+| 23 | [20191218](https://minsangkimme.github.io/DevLog/css/square-grid/index.html) | css | css float layout 공부 | |
 | 22 | [20191217](cleaner/) | React | react multi step form 페이지 구현 |  |
 | 21  | [20191215](https://minsangkimme.github.io/DevLog/resume/public/index.html)        | resume       | 자기소개 페이지 수정           |      |
 | 20  | [20191125](JavaScript30/)                                                         | JavaScript30 | css flex and JS 공부                                    |      |
